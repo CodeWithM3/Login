@@ -1,0 +1,26 @@
+POST http://localhost:5000/api/users
+Content-Type: application/json
+
+{
+    "name": "tammy",
+    "email": "tamy@gmail.com",
+    "password": "12678938"
+}
+###
+POST http://localhost:5000/api/auth/login
+Content-Type: application/json
+
+{
+    "email": "tee@gmail.com",
+    "password": "12345678"
+    }
+
+###
+GET http://localhost:5000/api/users
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiZTVjMTc5NzAtZDQzMy00Yzg5LTk5MmMtZmQ5MzA3NzBkM2E2IiwidXNlcl9uYW1lIjoiVG9ueSIsInVzZXJfZW1haWwiOiJ0ZWVAZ21haWwuY29tIiwiaWF0IjoxNjM1NjMwMTg2LCJleHAiOjE2MzU2MzA0ODZ9.7U_CWFGrVc8bTjNXeO1dQjuILxbz-0SQy3BQnC1QvoA
+
+###
+GET http://localhost:5000/api/auth/refresh_token
+
+###
+DELETE http://localhost:5000/api/auth/refresh_token
